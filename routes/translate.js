@@ -5,6 +5,7 @@ const router = express.Router();
 const translateController= require('../controller/translateController');
 
 // handling translate request 
+router.get('/', translateController.home);
 router.get('/translate', translateController.translate);
 
 module.exports = router;

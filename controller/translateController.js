@@ -2,6 +2,11 @@ const googleTranslate = require('@vitalets/google-translate-api');
 const { response } = require('express');
 const Cache = require('../models/cache');
 
+module.exports.home = async function(req, res) {
+    return res.render('home');
+}
+
+
 module.exports.translate = async function(req, res) {
 
     try{

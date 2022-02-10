@@ -38,15 +38,16 @@ npm start
 To get the text translation, we can Postman or any web browser and hit this API as follow:
 
 ```
-/translate?text=&lang=
+{URL}/translate?text=&lang=
 
 ```
 for Example- Convert My name is Manvendra Rajpoot! to Marathi
 
 ```
-/translate?text=My%20name%20is%20Manvendra%20Rajpoot%21&lang=mr
+{URL}/translate?text=My%20name%20is%20Manvendra%20Rajpoot%21&lang=mr
 
 ```
+#URL- (http://localhost:5000) or Deployed link (https://ninja-translation-caching.herokuapp.com/)
 
 ## Caching 
 In order to avoid repeated hits to the translation API, caching of translation is done.
